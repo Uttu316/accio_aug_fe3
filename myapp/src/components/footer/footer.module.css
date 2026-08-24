@@ -5,6 +5,9 @@
   color: #666;
   margin-top: 40px;
 }
+.text {
+  color: blueviolet;
+}
 
 .footer__text {
   margin: 0;

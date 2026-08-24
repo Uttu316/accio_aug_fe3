@@ -5,10 +5,11 @@
   box-shadow: 4px 4px 4px #ccc;
   padding: 10px 16px;
 }
-
 .header__title {
   font-size: 1.5rem;
-  color: #333;
+}
+.text {
+  color: teal;
 }
 
 .header__nav {
