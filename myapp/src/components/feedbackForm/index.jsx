@@ -1,10 +1,11 @@
 import styles from "./feedbackForm.module.css";
 
-const FeedbackForm = ({ data, setData, onSave }) => {
+const FeedbackForm = ({ data, onUpdate, editIndex, setData, onSave }) => {
   const onInput = (e) => {
     const { id, value } = e.target;
     setData({ ...data, [id]: value });
   };
+  const isEditing = editIndex !== null;
   return (
     <form className={styles.form}>
       <div className={styles.field}>
@@ -43,9 +44,16 @@ const FeedbackForm = ({ data, setData, onSave }) => {
           id="description"
         ></textarea>
       </div>
-      <button className={styles.saveBtn} onClick={onSave}>
-        Save
-      </button>
+      {!isEditing && (
+        <button className={styles.saveBtn} onClick={onSave}>
+          Save
+        </button>
+      )}
+      {isEditing && (
+        <button className={styles.saveBtn} onClick={onUpdate}>
+          Update
+        </button>
+      )}
     </form>
   );
 };

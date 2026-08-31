@@ -1,7 +1,8 @@
 import styles from "./feedbackCard.module.css";
 
-const FeedbackCard = ({ feedback }) => {
-  const { timestamp, username, email, phone, description, category } = feedback;
+const FeedbackCard = ({ index, onEdit, feedback, onDelete }) => {
+  const { timestamp, id, username, email, phone, description, category } =
+    feedback;
   return (
     <div className={styles.card}>
       <div className={styles.header}>
@@ -16,8 +17,15 @@ const FeedbackCard = ({ feedback }) => {
       <p className={styles.description}>{description}</p>
 
       <div className={styles.actions}>
-        <button className={styles.editBtn}>Edit</button>
-        <button className={styles.deleteBtn}>Delete</button>
+        <button
+          onClick={() => onEdit(feedback, index)}
+          className={styles.editBtn}
+        >
+          Edit
+        </button>
+        <button onClick={() => onDelete(id)} className={styles.deleteBtn}>
+          Delete
+        </button>
       </div>
     </div>
   );
