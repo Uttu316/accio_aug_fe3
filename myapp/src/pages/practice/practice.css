@@ -1,0 +1,34 @@
+.hero {
+  padding: 40px 16px;
+}
+
+.hero__heading {
+  font-size: 2rem;
+  color: #222;
+  margin-bottom: 8px;
+}
+
+.hero__subheading {
+  font-size: 1.2rem;
+  color: #666;
+  font-weight: 400;
+}
+
+.details {
+  padding: 40px 16px;
+}
+
+.details__list {
+  padding-left: 20px;
+  line-height: 2;
+}
+
+.details__label {
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.details__sublist {
+  padding-left: 20px;
+  line-height: 2;
+}
