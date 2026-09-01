@@ -1,0 +1,20 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px 20px 60px;
+  background: #e0e5ec;
+}
+
+.status {
+  text-align: center;
+  padding: 40px 24px;
+  margin: 32px auto;
+  max-width: 420px;
+  border-radius: 20px;
+  color: #6b7280;
+  font-weight: 600;
+  background: #e0e5ec;
+  box-shadow:
+    inset 6px 6px 12px #b8bec7,
+    inset -6px -6px 12px #ffffff;
+}

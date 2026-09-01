@@ -1,0 +1,165 @@
+.page {
+  min-height: 100vh;
+  background: #e0e5ec;
+  color: #4b5563;
+}
+
+.hero {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 60px 24px 20px;
+  text-align: center;
+}
+
+.title {
+  margin: 0 0 16px;
+  font-size: 2.6rem;
+  font-weight: 800;
+  color: #3f4756;
+  text-shadow:
+    1px 1px 2px #ffffff,
+    -1px -1px 2px #b8bec7;
+}
+
+.subtitle {
+  margin: 0 auto;
+  max-width: 560px;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: #6b7280;
+}
+
+.layout {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 30px 24px 70px;
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 36px;
+}
+
+@media (max-width: 760px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+.infoPanel {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.infoCard {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 22px;
+  border-radius: 22px;
+  background: #e0e5ec;
+  box-shadow:
+    9px 9px 18px #b8bec7,
+    -9px -9px 18px #ffffff;
+}
+
+.infoIcon {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  font-size: 1.3rem;
+  border-radius: 14px;
+  background: #e0e5ec;
+  box-shadow:
+    inset 4px 4px 8px #b8bec7,
+    inset -4px -4px 8px #ffffff;
+}
+
+.infoLabel {
+  margin: 0 0 4px;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #3f4756;
+}
+
+.infoValue {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: #6b7280;
+}
+
+.form {
+  padding: 32px;
+  border-radius: 26px;
+  background: #e0e5ec;
+  box-shadow:
+    9px 9px 18px #b8bec7,
+    -9px -9px 18px #ffffff;
+}
+
+.formTitle {
+  margin: 0 0 24px;
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: #3f4756;
+}
+
+.field {
+  margin-bottom: 20px;
+}
+
+.label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #6b7280;
+}
+
+.input,
+.textarea {
+  width: 100%;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  padding: 14px 16px;
+  border-radius: 14px;
+  font-size: 0.95rem;
+  color: #4b5563;
+  background: #e0e5ec;
+  box-shadow:
+    inset 5px 5px 10px #b8bec7,
+    inset -5px -5px 10px #ffffff;
+}
+
+.textarea {
+  resize: vertical;
+  min-height: 130px;
+  font-family: inherit;
+}
+
+.submitBtn {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  width: 100%;
+  padding: 16px;
+  border-radius: 16px;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #5b6bff;
+  background: #e0e5ec;
+  box-shadow:
+    6px 6px 12px #b8bec7,
+    -6px -6px 12px #ffffff;
+  transition: all 0.2s ease;
+}
+
+.submitBtn:active {
+  box-shadow:
+    inset 4px 4px 8px #b8bec7,
+    inset -4px -4px 8px #ffffff;
+}

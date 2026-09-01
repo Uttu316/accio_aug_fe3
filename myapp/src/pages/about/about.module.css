@@ -1,0 +1,161 @@
+.page {
+  min-height: 100vh;
+  background: #e0e5ec;
+  color: #4b5563;
+}
+
+.hero {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 60px 24px 30px;
+  text-align: center;
+}
+
+.title {
+  margin: 0 0 18px;
+  font-size: 2.6rem;
+  font-weight: 800;
+  color: #3f4756;
+  text-shadow:
+    1px 1px 2px #ffffff,
+    -1px -1px 2px #b8bec7;
+}
+
+.subtitle {
+  margin: 0 auto;
+  max-width: 620px;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: #6b7280;
+}
+
+.bannerWrap {
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 20px;
+  border-radius: 30px;
+  background: #e0e5ec;
+  box-shadow:
+    12px 12px 24px #b8bec7,
+    -12px -12px 24px #ffffff;
+}
+
+.banner {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 20px;
+  display: block;
+}
+
+.stats {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px 24px 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 24px;
+}
+
+.statCard {
+  text-align: center;
+  padding: 28px 16px;
+  border-radius: 24px;
+  background: #e0e5ec;
+  box-shadow:
+    9px 9px 18px #b8bec7,
+    -9px -9px 18px #ffffff;
+}
+
+.statNumber {
+  display: block;
+  font-size: 2rem;
+  font-weight: 800;
+  color: #5b6bff;
+  margin-bottom: 6px;
+}
+
+.statLabel {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #6b7280;
+}
+
+.story {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px 24px 40px;
+}
+
+.sectionTitle {
+  margin: 0 0 18px;
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: #3f4756;
+  text-shadow:
+    1px 1px 2px #ffffff,
+    -1px -1px 2px #b8bec7;
+}
+
+.paragraph {
+  margin: 0 0 16px;
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #6b7280;
+}
+
+.values {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px 24px 70px;
+}
+
+.valueGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 28px;
+  margin-top: 28px;
+}
+
+.valueCard {
+  padding: 28px;
+  border-radius: 24px;
+  background: #e0e5ec;
+  box-shadow:
+    9px 9px 18px #b8bec7,
+    -9px -9px 18px #ffffff;
+  transition: transform 0.25s ease;
+}
+
+.valueCard:hover {
+  transform: translateY(-4px);
+}
+
+.valueIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  font-size: 1.5rem;
+  border-radius: 16px;
+  margin-bottom: 18px;
+  background: #e0e5ec;
+  box-shadow:
+    inset 4px 4px 8px #b8bec7,
+    inset -4px -4px 8px #ffffff;
+}
+
+.valueTitle {
+  margin: 0 0 10px;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #3f4756;
+}
+
+.valueText {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.55;
+  color: #6b7280;
+}

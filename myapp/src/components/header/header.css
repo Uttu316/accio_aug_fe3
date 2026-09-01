@@ -8,6 +8,10 @@
 .header__title {
   font-size: 1.5rem;
 }
+.header__title a {
+  text-decoration: none;
+  color: inherit;
+}
 .text {
   color: teal;
 }
@@ -25,5 +29,9 @@
 }
 
 .header__link:hover {
+  color: #007bff;
+}
+
+.header__link.active {
   color: #007bff;
 }

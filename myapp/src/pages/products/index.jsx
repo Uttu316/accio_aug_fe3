@@ -1,12 +1,13 @@
 import Footer from "../../components/footer";
 import Header from "../../components/header";
 import ProductsContainer from "../../components/productsContainer";
+import styles from "./products.module.css";
 
 const ProductsPage = () => {
   return (
-    <div>
+    <div className={styles.page}>
       <Header />
-      <h1>Latest Product</h1>
+      <h1 className={styles.title}>Latest Product</h1>
       <ProductsContainer />
       <Footer />
     </div>

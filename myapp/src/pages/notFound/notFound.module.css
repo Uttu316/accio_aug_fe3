@@ -1,0 +1,91 @@
+.page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 24px;
+  background: #e0e5ec;
+  color: #4b5563;
+}
+
+.card {
+  width: 100%;
+  max-width: 520px;
+  text-align: center;
+  padding: 50px 40px;
+  border-radius: 30px;
+  background: #e0e5ec;
+  box-shadow:
+    12px 12px 24px #b8bec7,
+    -12px -12px 24px #ffffff;
+}
+
+.code {
+  margin: 0;
+  font-size: 6rem;
+  font-weight: 800;
+  line-height: 1;
+  color: #5b6bff;
+  text-shadow:
+    2px 2px 4px #ffffff,
+    -2px -2px 4px #b8bec7;
+}
+
+.title {
+  margin: 12px 0 14px;
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: #3f4756;
+}
+
+.text {
+  margin: 0 auto 32px;
+  max-width: 380px;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #6b7280;
+}
+
+.actions {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btnPrimary,
+.btnSecondary {
+  text-decoration: none;
+  cursor: pointer;
+  padding: 14px 28px;
+  border-radius: 16px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  background: #e0e5ec;
+  box-shadow:
+    6px 6px 12px #b8bec7,
+    -6px -6px 12px #ffffff;
+  transition: all 0.2s ease;
+}
+
+.btnPrimary {
+  color: #5b6bff;
+}
+
+.btnSecondary {
+  color: #6b7280;
+}
+
+.btnPrimary:hover,
+.btnSecondary:hover {
+  box-shadow:
+    4px 4px 8px #b8bec7,
+    -4px -4px 8px #ffffff;
+}
+
+.btnPrimary:active,
+.btnSecondary:active {
+  box-shadow:
+    inset 4px 4px 8px #b8bec7,
+    inset -4px -4px 8px #ffffff;
+}

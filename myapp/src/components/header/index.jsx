@@ -1,15 +1,18 @@
+import { Link, NavLink } from "react-router";
 import "./header.css";
 const Header = () => {
   return (
     <header className="header">
-      <h1 className="header__title text">My App</h1>
+      <h1 className="header__title text">
+        <Link to="/">My App</Link>
+      </h1>
       <nav className="header__nav">
-        <a href="#" className="header__link">
+        <NavLink to="/about" className="header__link">
           About
-        </a>
-        <a href="#" className="header__link">
+        </NavLink>
+        <NavLink to="/contact" className="header__link">
           Contact
-        </a>
+        </NavLink>
       </nav>
     </header>
   );

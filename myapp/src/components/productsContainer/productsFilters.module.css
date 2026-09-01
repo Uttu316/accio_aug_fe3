@@ -1,0 +1,43 @@
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  justify-content: center;
+  padding: 12px 0 36px;
+}
+
+.filterBtn {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 12px 24px;
+  border-radius: 14px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #6b7280;
+  background: #e0e5ec;
+  box-shadow:
+    6px 6px 12px #b8bec7,
+    -6px -6px 12px #ffffff;
+  transition: all 0.2s ease;
+}
+
+.filterBtn:hover {
+  color: #4b5563;
+  box-shadow:
+    4px 4px 8px #b8bec7,
+    -4px -4px 8px #ffffff;
+}
+
+.filterBtn:active {
+  box-shadow:
+    inset 4px 4px 8px #b8bec7,
+    inset -4px -4px 8px #ffffff;
+}
+
+.selected {
+  color: #5b6bff;
+  box-shadow:
+    inset 5px 5px 10px #b8bec7,
+    inset -5px -5px 10px #ffffff;
+}
