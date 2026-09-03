@@ -147,3 +147,29 @@
     inset 4px 4px 8px #b8bec7,
     inset -4px -4px 8px #ffffff;
 }
+
+.removeCartBtn {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 12px 20px;
+  border-radius: 14px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: salmon;
+  background: #e0e5ec;
+  box-shadow:
+    6px 6px 12px #b8bec7,
+    -6px -6px 12px #ffffff;
+  transition: all 0.2s ease;
+}
+
+.removeCartBtn:hover {
+  color: rgb(229, 120, 108);
+}
+
+.removeCartBtn:active {
+  box-shadow:
+    inset 4px 4px 8px #b8bec7,
+    inset -4px -4px 8px #ffffff;
+}

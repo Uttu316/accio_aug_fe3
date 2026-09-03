@@ -236,7 +236,8 @@
 }
 
 .buyNow,
-.addCart {
+.addCart,
+.removeCart {
   flex: 1 1 180px;
   border: none;
   outline: none;
@@ -259,16 +260,21 @@
 .addCart {
   color: #6b7280;
 }
+.removeCart {
+  color: salmon;
+}
 
 .buyNow:hover,
-.addCart:hover {
+.addCart:hover,
+.removeCart:hover {
   box-shadow:
     4px 4px 8px #b8bec7,
     -4px -4px 8px #ffffff;
 }
 
 .buyNow:active,
-.addCart:active {
+.addCart:active,
+.removeCart:active {
   box-shadow:
     inset 4px 4px 8px #b8bec7,
     inset -4px -4px 8px #ffffff;

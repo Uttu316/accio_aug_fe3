@@ -1,14 +1,11 @@
 import { useNavigate } from "react-router";
-import Footer from "../../components/footer";
-import Header from "../../components/header";
 import styles from "./home.module.css";
+import PageContainer from "../../components/pageContainer";
 
 const HomePage = () => {
   const navigate = useNavigate();
   return (
-    <div className={styles.page}>
-      <Header />
-
+    <PageContainer className={styles.page}>
       <section className={styles.hero}>
         <div className={styles.heroContent}>
           <span className={styles.eyebrow}>New Season 2026</span>
@@ -110,9 +107,7 @@ const HomePage = () => {
           </div>
         </div>
       </section>
-
-      <Footer />
-    </div>
+    </PageContainer>
   );
 };
 export default HomePage;

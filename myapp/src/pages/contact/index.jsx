@@ -1,12 +1,11 @@
 import Footer from "../../components/footer";
 import Header from "../../components/header";
+import PageContainer from "../../components/pageContainer";
 import styles from "./contact.module.css";
 
 const ContactPage = () => {
   return (
-    <div className={styles.page}>
-      <Header />
-
+    <PageContainer className={styles.page}>
       <section className={styles.hero}>
         <h1 className={styles.title}>Get in Touch</h1>
         <p className={styles.subtitle}>
@@ -106,9 +105,7 @@ const ContactPage = () => {
           </button>
         </form>
       </section>
-
-      <Footer />
-    </div>
+    </PageContainer>
   );
 };
 export default ContactPage;

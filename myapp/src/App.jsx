@@ -6,26 +6,32 @@ import ContactPage from "./pages/contact";
 import NotFoundPage from "./pages/notFound";
 import { BrowserRouter, Route, Routes } from "react-router";
 import ProductPage from "./pages/product";
+import CartPage from "./pages/cart";
+import CartProvider from "./contexts/cartContext";
 
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/practice" element={<PracticePage />} />
+    <CartProvider>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/practice" element={<PracticePage />} />
 
-        <Route path="/" element={<HomePage />} />
+          <Route path="/" element={<HomePage />} />
 
-        <Route path="/products" element={<ProductsPage />} />
+          <Route path="/products" element={<ProductsPage />} />
 
-        <Route path="/about" element={<AboutPage />} />
+          <Route path="/about" element={<AboutPage />} />
 
-        <Route path="/contact" element={<ContactPage />} />
+          <Route path="/contact" element={<ContactPage />} />
 
-        <Route path="/product/:productId" element={<ProductPage />} />
+          <Route path="/product/:productId" element={<ProductPage />} />
 
-        <Route path="*" element={<NotFoundPage />} />
-      </Routes>
-    </BrowserRouter>
+          <Route path="/cart" element={<CartPage />} />
+
+          <Route path="*" element={<NotFoundPage />} />
+        </Routes>
+      </BrowserRouter>
+    </CartProvider>
   );
 }
 export default App;

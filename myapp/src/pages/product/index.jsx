@@ -1,8 +1,8 @@
 import { useParams } from "react-router";
-import Footer from "../../components/footer";
-import Header from "../../components/header";
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import styles from "./product.module.css";
+import PageContainer from "../../components/pageContainer";
+import { CartContext } from "../../contexts/cartContext";
 
 const ProductPage = () => {
   const { productId } = useParams();
@@ -39,9 +39,7 @@ const ProductPage = () => {
   const noProduct = isDone && product === null;
 
   return (
-    <div className={styles.page}>
-      <Header />
-
+    <PageContainer className={styles.page}>
       {isLoading && (
         <h2 className={styles.status}>Loading product details...</h2>
       )}
@@ -55,14 +53,13 @@ const ProductPage = () => {
           setActiveImage={setActiveImage}
         />
       )}
-
-      <Footer />
-    </div>
+    </PageContainer>
   );
 };
 
 const ProductDetail = ({ product, activeImage, setActiveImage }) => {
   const {
+    id,
     title,
     description,
     category,
@@ -84,6 +81,8 @@ const ProductDetail = ({ product, activeImage, setActiveImage }) => {
     images,
     thumbnail,
   } = product;
+
+  const { addToCart, deleteFromCart, isInCart } = useContext(CartContext);
 
   const gallery = images && images.length > 0 ? images : [thumbnail];
   const mainSrc = gallery[activeImage] || gallery[0];
@@ -107,6 +106,8 @@ const ProductDetail = ({ product, activeImage, setActiveImage }) => {
   }
 
   const reviewList = reviews || [];
+
+  const inCart = isInCart(id);
 
   return (
     <div className={styles.wrapper}>
@@ -167,9 +168,23 @@ const ProductDetail = ({ product, activeImage, setActiveImage }) => {
             <button className={styles.buyNow} disabled={isOutOfStock}>
               ⚡ Buy Now
             </button>
-            <button className={styles.addCart} disabled={isOutOfStock}>
-              🛒 Add to Cart
-            </button>
+            {!inCart && (
+              <button
+                onClick={() => addToCart(product)}
+                className={styles.addCart}
+                disabled={isOutOfStock}
+              >
+                🛒 Add to Cart
+              </button>
+            )}
+            {inCart && (
+              <button
+                onClick={() => deleteFromCart(id)}
+                className={styles.removeCart}
+              >
+                🛒 Remove to Cart
+              </button>
+            )}
           </div>
 
           <div className={styles.highlights}>

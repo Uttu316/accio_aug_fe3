@@ -35,3 +35,38 @@
 .header__link.active {
   color: #007bff;
 }
+
+.header__cart {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  color: #555;
+  font-size: 1.5rem;
+  transition: color 0.2s;
+}
+
+.header__cart:hover,
+.header__cart.active {
+  color: #007bff;
+}
+
+.header__cart-icon {
+  display: block;
+}
+
+.header__cart-badge {
+  position: absolute;
+  top: -8px;
+  right: -10px;
+  min-width: 18px;
+  height: 18px;
+  padding: 0 5px;
+  border-radius: 9px;
+  background-color: #e53935;
+  color: #fff;
+  font-size: 0.7rem;
+  font-weight: 700;
+  line-height: 18px;
+  text-align: center;
+  box-sizing: border-box;
+}
