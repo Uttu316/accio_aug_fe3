@@ -1,0 +1,277 @@
+.page {
+  min-height: 100vh;
+  background: #e0e5ec;
+  color: #4b5563;
+}
+
+.split {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  min-height: calc(100vh - 140px);
+}
+
+/* ---- Left visual side (60% width) ---- */
+.visual {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 14px;
+  padding: 64px;
+  color: #ffffff;
+  background: linear-gradient(
+    160deg,
+    rgba(63, 71, 86, 0.15) 0%,
+    rgba(37, 43, 56, 0.85) 100%
+  );
+}
+
+.brand {
+  margin: 0;
+  font-size: 1.15rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  opacity: 0.9;
+}
+
+.visualTitle {
+  margin: 0;
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 1.12;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
+}
+
+.visualText {
+  margin: 0;
+  max-width: 480px;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  opacity: 0.92;
+}
+
+/* ---- Right form side (40%) ---- */
+.formSide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 48px 40px;
+}
+
+.form {
+  width: 100%;
+  max-width: 380px;
+}
+
+.title {
+  margin: 0 0 8px;
+  font-size: 2rem;
+  font-weight: 800;
+  color: #3f4756;
+  text-shadow:
+    1px 1px 2px #ffffff,
+    -1px -1px 2px #b8bec7;
+}
+
+.subtitle {
+  margin: 0 0 30px;
+  font-size: 0.92rem;
+  color: #6b7280;
+}
+
+.field {
+  margin-bottom: 18px;
+}
+
+.label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #6b7280;
+}
+
+.input {
+  width: 100%;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  padding: 14px 16px;
+  border-radius: 14px;
+  font-size: 0.95rem;
+  color: #4b5563;
+  background: #e0e5ec;
+  box-shadow:
+    inset 5px 5px 10px #b8bec7,
+    inset -5px -5px 10px #ffffff;
+}
+
+.passwordWrap {
+  position: relative;
+}
+
+.passwordWrap .input {
+  padding-right: 48px;
+}
+
+.eyeBtn {
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 6px;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  color: #6b7280;
+  background: transparent;
+  transition: color 0.2s;
+}
+
+.eyeBtn:hover {
+  color: #5b6bff;
+}
+
+.formMeta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 4px 0 24px;
+  font-size: 0.82rem;
+  color: #6b7280;
+}
+
+.remember {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.forgot {
+  color: #5b6bff;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.submitBtn {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  width: 100%;
+  padding: 16px;
+  border-radius: 16px;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #5b6bff;
+  background: #e0e5ec;
+  box-shadow:
+    6px 6px 12px #b8bec7,
+    -6px -6px 12px #ffffff;
+  transition: all 0.2s ease;
+}
+
+.submitBtn:active {
+  box-shadow:
+    inset 4px 4px 8px #b8bec7,
+    inset -4px -4px 8px #ffffff;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 26px 0;
+  font-size: 0.78rem;
+  color: #9ca3af;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  flex: 1;
+  height: 2px;
+  border-radius: 2px;
+  background: #e0e5ec;
+  box-shadow:
+    inset 1px 1px 2px #b8bec7,
+    inset -1px -1px 2px #ffffff;
+}
+
+.googleBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  width: 100%;
+  padding: 14px;
+  border-radius: 16px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #4b5563;
+  background: #e0e5ec;
+  box-shadow:
+    6px 6px 12px #b8bec7,
+    -6px -6px 12px #ffffff;
+  transition: all 0.2s ease;
+}
+
+.googleBtn:active {
+  box-shadow:
+    inset 4px 4px 8px #b8bec7,
+    inset -4px -4px 8px #ffffff;
+}
+
+.googleIcon {
+  width: 20px;
+  height: 20px;
+}
+
+.switch {
+  margin: 24px 0 0;
+  text-align: center;
+  font-size: 0.88rem;
+  color: #6b7280;
+}
+
+.switch a {
+  color: #5b6bff;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+@media (max-width: 820px) {
+  .split {
+    grid-template-columns: 1fr;
+    grid-template-rows: 40vh auto;
+    min-height: 0;
+  }
+
+  .visual {
+    min-height: 40vh;
+  }
+
+  .overlay {
+    padding: 32px;
+  }
+
+  .formSide {
+    padding: 40px 24px 60px;
+  }
+}

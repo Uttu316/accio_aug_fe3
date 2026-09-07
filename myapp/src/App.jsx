@@ -7,7 +7,10 @@ import NotFoundPage from "./pages/notFound";
 import { BrowserRouter, Route, Routes } from "react-router";
 import ProductPage from "./pages/product";
 import CartPage from "./pages/cart";
+import LoginPage from "./pages/login";
+import SignupPage from "./pages/signup";
 import CartProvider from "./contexts/cartContext";
+import { PrivateRoute, ProtectedRoute } from "./routes/RouteGuards";
 
 function App() {
   return (
@@ -26,7 +29,14 @@ function App() {
 
           <Route path="/product/:productId" element={<ProductPage />} />
 
-          <Route path="/cart" element={<CartPage />} />
+          <Route element={<ProtectedRoute />}>
+            <Route path="/login" element={<LoginPage />} />
+            <Route path="/signup" element={<SignupPage />} />
+          </Route>
+
+          <Route element={<PrivateRoute />}>
+            <Route path="/cart" element={<CartPage />} />
+          </Route>
 
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
