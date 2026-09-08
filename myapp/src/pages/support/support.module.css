@@ -1,0 +1,57 @@
+.page {
+  min-height: 100vh;
+  background: #e0e5ec;
+  color: #4b5563;
+}
+
+.wrapper {
+  max-width: 820px;
+  margin: 0 auto;
+  padding: 40px 24px 70px;
+}
+
+.pageHeader {
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 7px 16px;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #2f9e6f;
+  background: #e0e5ec;
+  box-shadow:
+    4px 4px 8px #b8bec7,
+    -4px -4px 8px #ffffff;
+}
+
+.badgeDot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #2fbf71;
+  box-shadow: 0 0 0 3px rgba(47, 191, 113, 0.25);
+}
+
+.title {
+  margin: 18px 0 10px;
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: #3f4756;
+  text-shadow:
+    1px 1px 2px #ffffff,
+    -1px -1px 2px #b8bec7;
+}
+
+.subtitle {
+  margin: 0 auto;
+  max-width: 480px;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #6b7280;
+}

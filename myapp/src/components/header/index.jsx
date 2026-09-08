@@ -6,6 +6,7 @@ import {
   MdShoppingCart as CartIcon,
   MdAccountCircle as ProfileIcon,
   MdLogout as LogoutIcon,
+  MdOutlineSupportAgent as SupportIcon,
 } from "react-icons/md";
 
 const Header = () => {
@@ -29,6 +30,10 @@ const Header = () => {
     setMenuOpen(false);
     navigate("/login");
     clearCart();
+  };
+
+  const handleChatSupport = () => {
+    navigate("/support");
   };
 
   const isLoggedIn = localStorage.getItem("auth-user");
@@ -83,6 +88,15 @@ const Header = () => {
                 >
                   <LogoutIcon className="header__menu-icon" />
                   Logout
+                </button>
+                <button
+                  type="button"
+                  className="header__menu-item"
+                  role="menuitem"
+                  onClick={handleChatSupport}
+                >
+                  <SupportIcon className="header__menu-icon" />
+                  Support
                 </button>
               </div>
             )}

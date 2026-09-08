@@ -11,6 +11,7 @@ import LoginPage from "./pages/login";
 import SignupPage from "./pages/signup";
 import CartProvider from "./contexts/cartContext";
 import { PrivateRoute, ProtectedRoute } from "./routes/RouteGuards";
+import ChatSupportPage from "./pages/support";
 
 function App() {
   return (
@@ -36,6 +37,7 @@ function App() {
 
           <Route element={<PrivateRoute />}>
             <Route path="/cart" element={<CartPage />} />
+            <Route path="/support" element={<ChatSupportPage />} />
           </Route>
 
           <Route path="*" element={<NotFoundPage />} />

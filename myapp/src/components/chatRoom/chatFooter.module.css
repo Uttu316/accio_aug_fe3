@@ -1,0 +1,75 @@
+.footer {
+  padding: 18px 24px 20px;
+  background: #e0e5ec;
+  box-shadow: 0 -6px 12px -6px rgba(63, 71, 86, 0.15);
+}
+
+.inputWrap {
+  display: flex;
+  align-items: flex-end;
+  gap: 12px;
+  padding: 8px 8px 8px 18px;
+  border-radius: 20px;
+  background: #e0e5ec;
+  box-shadow:
+    inset 5px 5px 10px #b8bec7,
+    inset -5px -5px 10px #ffffff;
+}
+
+.textarea {
+  flex: 1;
+  border: none;
+  outline: none;
+  resize: none;
+  max-height: 120px;
+  padding: 10px 0;
+  font-family: inherit;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #4b5563;
+  background: transparent;
+}
+
+.textarea::placeholder {
+  color: #9ca3af;
+}
+
+.sendBtn {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 46px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 14px;
+  font-size: 1.3rem;
+  color: #ffffff;
+  background: linear-gradient(135deg, #6b7bff 0%, #5b6bff 100%);
+  box-shadow:
+    4px 4px 8px #b8bec7,
+    -4px -4px 8px #ffffff;
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+.sendBtn:hover {
+  transform: translateY(-1px);
+}
+
+.sendBtn:active {
+  transform: translateY(0);
+  box-shadow:
+    inset 3px 3px 6px rgba(63, 71, 86, 0.4),
+    inset -3px -3px 6px rgba(255, 255, 255, 0.2);
+}
+
+.hint {
+  margin: 12px 0 0;
+  text-align: center;
+  font-size: 0.75rem;
+  color: #9ca3af;
+}
